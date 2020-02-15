@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="css/register.css" />
+    <link rel="icon" href="media/abhyuday.jpg" />
+    <title>Register</title>
+  </head>
+  <body>
+    <div class="mobile-nav">
+      <label for="toggle" style="color: #FFF;">&#9776;</label>
+      <input type="checkbox" name="" id="toggle" />
+      <div class="mobile-menu">
+        <a href="/">Home</a>
+        <a href="events.html">Events</a>
+        <a href="team.html">Team</a>
+        <a href="/#section-three">Loacte Us</a>
+      </div>
+    </div>
+    <div class="nav-bar">
+      <h2>
+        <a href="/"
+          ><img id="logo" src="media/abhLogo.png" height="150" width="225"
+        /></a>
+      </h2>
+      <h4>
+        <a href="/">Home
+        </a>
+      </h4>
+      <h4><a href="events.html"> Events </a></h4>
+      <h4><a href="team.html"> team </a></h4>
+      <h4><a href="/#section-three"> locate us </a></h4>
+    </div>
+
+    <!-- <div class="event-form">
+      <h3>Register Here</h3>
+      <form id="register-form">
+        <label>Name </label>
+        <input type="text" id="fname" placeholder="Full Name" required />
+        <label>Email</label>
+        <input type="email" id="mail" placeholder="abc@gmail.com" required />
+        <label>College </label>
+        <input type="text" id="college" placeholder="College Name" required />
+        <label>Phone Number</label>
+        <input type="number" id="phoneNumber" placeholder="Ph. Number" />
+        <label>Select Event</label>
+        <select name="" id="event-name">
+          <option value="gaming">Gaming</option>
+          <option value="coding">Coding</option>
+          <option value="quiz">IT Quiz</option>
+          <option value="manager">IT Manager</option>
+          <option value="web">Web Designing</option>
+          <option value="app">App Development</option>
+          <option value="graphic">Graphic Designing</option>
+        </select>
+        <label for="">Course</label>
+        <select id="course">
+          <option value="bca">BCA</option>
+          <option value="mca">MCA</option>
+        </select>
+        <label>Participant 2</label>
+        <input type="text" id="sname" placeholder="Name of Participant 2" />
+        <button>Register</button>
+      </form>
+    </div> -->
+    <div class="container">
+      <div class="row">
+        <div class="col s12 l6">
+          <h2 class="text-white"> Register here</h2>
+          <form action="" id="register-form">
+            <div class="input-field">
+              <input type="text" id="fname" required>
+              <label for="fname">Full Name</label>
+            </div>
+            <div class="input-field">
+              <input type="email" id="mail">
+              <label for="mail">Email</label>
+            </div>
+            <div class="input-field">
+              <input type="text" id="college">
+              <label for="college">College Name</label>
+            </div>
+            <div class="input-field">
+              <input type="number" id="phoneNumber">
+              <label for="phoneNumber">Phone Number</label>
+            </div>
+            
+            <div class="input-group mb-3">
+              <select class="custom-select" id="event-name">
+                <option disabled>Select Event Name</option>
+                <option value="Coding">Coding</option>
+                <option value="CS:GO">Counter Strike</option>
+                <option value="NFS">NFS</option>
+                <option value="PUBG">PUBG</option>
+                <option value="Quiz">IT-Quiz</option>
+                <option value="IT-Manager">IT-Manager</option>
+                <option value="Web">Web Designing</option>
+                <option value="AppDev">App Development</option>
+                <option value="Graphicon">Graphicon</option>
+                <option value="TreasureHunt">Treasure Hunt</option>
+              </select>
+            </div>
+
+            <div class="input-group mb-3">
+              <select class="custom-select" id="course">
+                <option disabled>Select Course</option>
+                <option value="MCA">MCA</option>
+                <option value="BCA">BCA</option>
+              </select>
+            </div>
+
+            <div class="input-field">
+              <input type="text" id="sname" placeholder="NAME OF PARTICIPANT 2">  
+            </div>
+
+            <button id="btn" class="btn">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+    </script>
+
+    <script src="js/register.js"></script>
+  </body>
+</html>

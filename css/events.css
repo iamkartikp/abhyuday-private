@@ -1,0 +1,529 @@
+/*
+colors: 
+#ee7000 orange
+#00c030 green
+#209cd4 blue
+#789 grey
+#2c3440 darkgrey
+#00a9d9 DC Blue
+#ff4500 Reddit
+#08a0e9 Twitter
+#29487d Facebook
+#f73466 Instagram
+*/
+
+/* Font imports */
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bangers|Zilla+Slab|Bebas+Neue|Barlow+Semi+Condensed|Luckiest+Guy|Amatic+SC|&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    overflow-x: hidden;
+}
+
+li {
+    list-style: none;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+#toggle {
+    display: none;
+}
+
+.nav-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin-top: 5vh;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.nav-bar a:hover {
+    color: rgb(255, 30, 0);
+}
+
+.nav-bar img{
+    position: fixed;
+    left: 0;
+    top:0;
+}
+
+.explore-events-content {
+    position: relative;
+    width: 100vw;
+    margin-top: 9%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.explore-events-content img {
+    width: 100%;
+    height: 100%;
+}
+
+.img-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: black;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+}
+
+.img-overlay h1 {
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    z-index: 2;
+    font-family: 'Bebas Neue';
+    font-size: 5rem;
+}
+
+.events-info {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    height: 630vh;
+    width: 100%;
+    background:#11181f ;
+}
+
+.events-content {
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr;
+    color: white;
+}
+
+.events {
+    display: grid;
+    margin: 5% 25vw;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.events img {
+    transition: transform .2s;
+}
+
+.events img:hover {
+    transform: scale(1.1);
+}
+
+.events img {
+    filter: grayscale(50%);
+}
+
+.events-text {
+    margin: auto 15%;
+}
+
+.events-text h3 {
+    font-size: 1rem;
+    font-family: 'Zilla Slab';
+}
+
+.events-button button {
+    padding: 10px;
+    background: #209cd4;
+    border: none;
+    color: white;
+    margin: 5px;
+}
+
+.mobile-btn {
+    display: none;
+}
+
+.gaming {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+#register {
+    background-color: #ff4500;
+    flex:1;
+}
+
+#gaming-rules {
+    flex:1;
+    padding: 10px 20px;
+}
+
+#game-rules {
+    display: none;
+    background: rgba(0,0,0,0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+
+#game-cancel {
+    color: black;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.game-content {
+    position: relative;
+    text-align: center;
+    margin: 2% 10%;
+    background: white;
+    padding: 3%;
+}
+
+.game-content h4 {
+    border-bottom: 1px black solid;
+}
+/* Coding CSS */
+#code-rules {
+    display: none;
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#code-cancel {
+    color: black;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.code-content {
+    position: relative;
+    text-align: center;
+    margin: 2% 10%;
+    background: white;
+    padding: 5%;
+}
+
+#coding-register {
+    background-color: #ff4500;
+    flex:1;
+}
+
+/* IT-Manager CSS */
+#it-manager-rules {
+    display: none;
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#it-manager-cancel {
+    color: black;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.it-manager-content {
+    position: relative;
+    text-align: center;
+    margin: 2% 10%;
+    background: white;
+    padding: 5%;
+}
+
+#it-manager-register {
+    background-color: #ff4500;
+    flex:1;
+}
+
+/* IT Quiz CSS */
+#it-quiz-rules {
+    display: none;
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#it-quiz-cancel {
+    color: black;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.it-quiz-content {
+    position: relative;
+    text-align: center;
+    margin: 2% 10%;
+    background: white;
+    padding: 5%;
+}
+
+#quiz-register {
+    background-color: #ff4500;
+    flex:1;
+}
+
+/* Web Development */
+#web-rules {
+    display: none;
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#web-cancel {
+    color: black;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.web-content {
+    position: relative;
+    text-align: center;
+    margin: 2% 10%;
+    background: white;
+    padding: 5%;
+}
+
+#web-register {
+    background-color: #ff4500;
+    flex:1;
+}
+
+/* App Development */
+#app-rules {
+    display: none;
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#app-cancel {
+    color: black;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.app-content {
+    position: relative;
+    text-align: center;
+    margin: 2% 20%;
+    background: white;
+    padding: 5%;
+}
+
+#app-register {
+    background-color: #ff4500;
+    flex:1;
+}
+
+/* Graphic Design */
+#graphic-rules {
+    display: none;
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#graphic-cancel {
+    color: black;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.graphic-content {
+    position: relative;
+    text-align: center;
+    margin: 2% 10%;
+    background: white;
+    padding: 5%;
+}
+
+#graphic-register {
+    background-color: #ff4500;
+    flex:1;
+}
+
+
+/* Treasure Hunt */
+
+#th-rules {
+    display: none;
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#th-cancel {
+    color: black;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.th-content {
+    position: relative;
+    text-align: center;
+    margin: 2% 10%;
+    background: white;
+    padding: 5%;
+}
+
+#th-register {
+    background-color: #ff4500;
+    flex:1;
+}
+
+/* New */
+
+@media(max-width:600px) {
+    body {
+        background: #03132b;
+        text-align: center;
+        overflow-x: hidden;
+    }
+    #logo {
+        margin-top: 5%;
+        height: 8%;
+        width: 25%;
+    }
+    .nav-bar {
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+    }
+    .nav-bar h2 {
+        font-size: 1rem;
+    }
+
+
+    .events {
+        margin: 5% 10%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .events-info {
+        margin-top: 10vh;
+        width: 100%;
+    }
+
+    .events-info img {
+        margin-top: 2px;
+        height: auto;
+        width: 80vw;
+    }
+
+    .explore-events-content {
+        display: none;
+    }
+
+    .events-text {
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .events-text h3 {
+        font-size: 1rem;
+        font-family: 'Zilla Slab';
+    }
+    
+    .events-button button {
+        padding: 10px;
+        background: #209cd4;
+        border: none;
+        color: white;
+    }
+
+    .events .coding {
+        display: flex;
+    }
+    .coding-text {
+        flex: 1;
+        order:2;
+    } 
+    .coding-img {
+        flex: 1;
+        order: 1;
+    }
+    .mobile-btn {
+        display: inline;
+    }
+    #game-rule-btn, #code-rule-btn, #it-manager-rule-btn, #it-quiz-rule-btn, 
+    #web-rule-btn, #app-rule-btn, #graphic-rule-btn, #th-rule-btn  {
+        display: none;
+    }
+}

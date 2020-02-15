@@ -1,0 +1,42 @@
+{
+    "particles": {
+        "number":{
+            "value":100
+        },
+        "shape":{
+            "type":"circle"
+        },
+        "opacity":{
+            "value":1,
+            "random": true
+        },
+        "size":{
+            "value":5,
+            "random":true,
+            "anim":{
+                "enable":true
+            }
+        },
+        "line_linked":{
+            "enable":true
+        },
+        "move":{
+            "enable":true,
+            "speed":10
+        }
+    },
+    "interactivity":{
+        "events":{
+            "onhover":{
+                "enable":true,
+                "mode":"repulse"
+            }
+        },
+        "modes":{
+            "repulse":{
+                "distance":40,
+                "duration":0.4
+            }
+        }
+    }
+}

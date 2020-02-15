@@ -1,0 +1,89 @@
+/* Font import */
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bangers|Barlow+Semi+Condensed|Luckiest+Guy|Amatic+SC|&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgb(8, 7, 8);
+    overflow-x: hidden;
+}
+
+.nav-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    margin-top: 5vh;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.nav-bar a:hover {
+    color: rgb(255, 30, 0);
+}
+
+.nav-bar img{
+    position: fixed;
+    left: 0;
+    top:0;
+}
+
+.gallery-pics {
+    margin: 15% 15%;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5rem;
+    color: white;
+    align-items: center;
+}
+
+.img1 img {
+    height: 100vh;
+    width: 160vh;
+    transition: 0.2s;
+}
+
+.vertical-img {
+    display: flex;
+    margin: 2vh;
+}
+
+.img2 img {
+    height: 75vh;
+    width: 30vw;
+    margin: auto 1vw;
+    transition: 0.2s;
+}
+
+.img3 img {
+    height: 75vh;
+    width: 30vw;
+    transition: 0.2s;
+}
+
+.img4 img {
+    height: 80vh;
+    width: 70vw;
+    transition: 0.2s;
+}
+
+.gallery-pics img:hover {
+    opacity: 0.5;
+}

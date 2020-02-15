@@ -1,0 +1,335 @@
+/* Font imports */
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bangers|Bree+Serif|Bebas+Neue|Barlow+Semi+Condensed|Luckiest+Guy|Amatic+SC|&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.video-header {
+    max-width: 960px;
+    text-align: center;
+}
+
+.mov{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.mov video{
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.nav-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin-top: 5vh;
+}
+
+.nav-bar .active {
+    color: rgb(255, 30, 0);
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.nav-bar a:hover {
+    color: rgb(255, 30, 0);
+}
+
+.nav-bar img{
+    position: fixed;
+    left: 0;
+    top:0;
+}
+
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: black;
+    opacity: 0.8;
+    z-index: 1;
+    box-shadow: inset 100px 100px 200px #14181c;
+}
+
+.header-content {
+    margin: 15% 20%;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+
+.header-content img {
+    width: 50%;
+}
+
+.header-content h1 {
+    position: relative;
+    font-family: 'Bangers', cursive;
+    color: white;
+    background: -webkit-linear-gradient(white,rgb(231, 43, 43));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 2;
+}
+
+.header-content p{
+    font-size: 2rem;
+    color: rgba(229, 52, 17, 1);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.header-content .btn {
+    text-transform: uppercase;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    margin: 10px;
+    padding: 10px 10px;
+    color: white;
+    font-size: 1.4rem;
+    margin-top: 5vh;
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    background: rgba(229, 52, 17, 1);
+    border-radius: 50px;
+ }
+
+
+ #section-two {
+    position: relative;  
+    height: 50vh; 
+    margin-top: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+ }
+
+ #section-two .sec2-media {
+    background: url('https://c4.wallpaperflare.com/wallpaper/718/847/787/cat-simple-background-portrait-display-wallpaper-preview.jpg');
+    height: 100%;
+    box-shadow: black 50px 100px 100px inset;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+ } 
+
+ #section-two .sec2-media > h1 {
+     font-size: 4rem;
+     color: white;
+     writing-mode: vertical-rl;
+     text-orientation: upright;
+     font-family: 'Bebas Neue', cursive;
+ }
+
+ #section-two .about-abhyuday { 
+    height: 100%;
+    text-align: justify;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5rem;
+ } 
+
+ #section-two .about-abhyuday> h1 {
+     font-family: 'Bree Serif';
+     text-align: center;
+     color: rgba(229, 52, 17, 1);;
+ }
+
+ #section-two .about-abhyuday > p {
+     margin: auto 100px;
+     font-family: 'Amatic SC', cursive;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     height: 100%;
+ }
+
+#section-three {
+    position: relative;
+    height: 100vh;
+    margin-top: 55vh;
+    background: rgb(247, 78, 0);
+    text-transform: uppercase;
+    display: flex;
+}
+
+.section-three-text {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex:1;
+    font-family: 'Bebas Neue',cursive;
+    color: white;
+    margin: 0 1.5vw;
+}
+
+.fa-map-marker {
+    font-size: 3rem;
+}
+
+.section-three-text h1 {
+    margin-top: 20vh;
+    font-size: 4rem;
+}
+
+.section-three-text h3 {
+    font-size: 2rem;
+    font-family: 'Amatic SC', cursive;
+}
+
+.section-three-text span {
+    font-size: 2rem;
+    font-family: 'Amatic SC';
+    text-align: justify;
+}
+
+.section-three-text p {
+    margin-top: 2vh;
+    font-size: 1.5rem;
+}
+
+.section-three-text p>a {
+    text-decoration: none;
+    color: white;
+    margin: 2vh 1vw;
+}
+
+.fa-instagram:hover {
+    color: #8134af;
+}
+
+.fa-facebook:hover {
+    color: #3b5998;
+}
+
+#section-three iframe {
+    flex: 1;
+    float: right;
+    margin: 12vh;
+    height: 75%;
+}
+
+#footer {
+    background: rgb(19, 18, 18);
+    height: 25vh;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.footer-content {
+    position: relative;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-content p {
+    margin-top: 7vh;
+}
+
+.fa-heart {
+    font-size: 1.5rem;
+    transition: 0.5s;
+}
+
+.fa-heart:hover {
+    color: red;
+    cursor: pointer;
+}
+
+@media(max-width: 500px) {
+    body {
+        background: rgb(247, 78, 0);
+        text-align: center;
+        overflow-x: hidden;
+    }
+    #logo {
+        margin-top: 5%;
+        height: 8%;
+        width: 25%;
+    }
+    .nav-bar {
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+    }
+    .nav-bar h2 {
+        font-size: 1rem;
+    }
+
+    .video-header {
+        height: 100%;
+    }
+
+    .header-content {
+        margin-top: 25%;
+    }
+    
+    .header-content .btn {
+        padding: 5px;   
+    }
+
+    .header-content .btn {
+        padding: 5px;
+    }
+
+    .about-abhyuday {
+        display: none;
+    }
+
+    #section-two {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .sec2-media {
+        height: 100%;
+    }
+    #section-three {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .section-three-text {
+        margin: auto 10%;
+    }
+    .section-three-text h1,.section-three-text h3,.section-three-text span {
+        font-size: 1.5rem;
+    }
+    #section-three iframe {
+        display: none;
+    }
+}
+
