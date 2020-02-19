@@ -1,6 +1,6 @@
 /* Font imports */
 @import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Bangers|Bree+Serif|Bebas+Neue|Barlow+Semi+Condensed|Luckiest+Guy|Amatic+SC|&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bangers|Bree+Serif|Noto+Sans+JP|Bebas+Neue|Barlow+Semi+Condensed|Luckiest+Guy|Amatic+SC|&display=swap');
 
 * {
     margin: 0;
@@ -249,7 +249,7 @@ body {
 .footer-content {
     position: relative;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Noto Sans JP';
     text-transform: uppercase;
     display: flex;
     align-items: center;

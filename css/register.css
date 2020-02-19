@@ -79,6 +79,22 @@ body {
     font-family: 'Bree Serif';
 }
 
+.success {
+    display: none;
+    border-radius: 10px;
+    border: rgb(123, 182, 123) solid;
+    background: rgb(67, 173, 67,0.3);
+    color: rgb(151, 224, 151);
+    padding: 10px;
+}
+.error {
+    display: none;
+    border-radius: 10px;
+    padding: 10px;
+    border: rgb(136, 6, 6) solid;
+    color: rgb(145, 3, 3);
+    background: rgb(231, 141, 141);
+}
 @media(max-width: 720px) {
     body {
         text-align: center;
@@ -118,8 +134,11 @@ body {
     #toggle:checked + .mobile-menu {
         display: block;
     }
+    .row {
+        margin: 0 10%;
+    }
     .container {
-        margin: 0;
+        margin-top: 5vh;
     }
     .container h2 {
         text-decoration: none;
