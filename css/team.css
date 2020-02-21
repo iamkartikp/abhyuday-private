@@ -133,7 +133,7 @@ body {
     left: 0;
     top: 0;
     width: 120vw;
-    height: 730vh;
+    height: 1000vh;
     z-index: -1;
 }
 
@@ -193,7 +193,7 @@ body {
         left: 0;
         top: 0;
         width: 100vw;
-        height: 400vh;
+        height: 600vh;
         z-index: -1;
     }
 }

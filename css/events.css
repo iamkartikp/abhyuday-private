@@ -451,6 +451,9 @@ li {
 /* New */
 
 @media(max-width:600px) {
+    html {
+        overflow-x: hidden;
+    }
     body {
         background: #03132b;
         text-align: center;
