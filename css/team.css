@@ -157,7 +157,7 @@ body {
         display: grid;
         grid-template-columns: repeat(5,1fr);
     }
-    .nav-bar h2 {
+    .nav-bar a {
         font-size: 1rem;
     }
 
