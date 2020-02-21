@@ -127,6 +127,11 @@ body {
     margin: auto 25vw;
 }
 
+.shivansh img, .mats img, .dhanush img {
+    height: 40%;
+    width: 40%;
+}
+
 #particles-js {
     background: rgb(8, 7, 8);
     position: absolute;
