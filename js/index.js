@@ -12,9 +12,9 @@ const tick = () => {
 
     const html =`
          <div> <span>${days}</span> <h6>Days</h6></div>
-         <div> <span>${h}</span> <h6>Days</h6></div>
-         <div> <span>${m}</span> <h6>Days</h6></div>
-         <div> <span>${s}</span> <h6>Days</h6></div>
+         <div> <span>${h}</span> <h6>Hours</h6></div>
+         <div> <span>${m}</span> <h6>Minutes</h6></div>
+         <div> <span>${s}</span> <h6>Seconds</h6></div>
     `;
 
     clock.innerHTML = html;
