@@ -124,6 +124,11 @@ body {
     border-radius: 50px;
  }
 
+.countdown {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    font-weight: bolder;
+}
 
  #section-two {
     position: relative;  
@@ -272,9 +277,8 @@ body {
     cursor: pointer;
 }
 
-@media(max-width: 500px) {
+@media(max-width: 720px) {
     body {
-        background: rgb(247, 78, 0);
         text-align: center;
         overflow-x: hidden;
     }
@@ -306,7 +310,9 @@ body {
     .header-content .btn {
         padding: 5px;
     }
-
+    .date {
+        display: none;
+    }    
     .about-abhyuday {
         display: none;
     }
