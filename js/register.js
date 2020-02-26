@@ -25,7 +25,7 @@ const error = document.querySelector('.error');
 
 const db = firebase.firestore();
 
-eventName.addEventListener("click", () => {
+eventName.addEventListener("change", () => {
   if (eventName.value == "Quiz" || eventName.value == "Web" || eventName.value=="TreasureHunt") {
     secondParticipant.style.opacity = 10;
     thirdParticipant.style.opacity = 0;
