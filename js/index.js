@@ -1,6 +1,6 @@
 const clock = document.querySelector('.countdown');
 
-const count = new Date('March 20, 2020 00:00:00').getTime()
+const count = new Date('March 20, 2020 10:00:00').getTime()
 const tick = () => {
     const now = new Date().getTime();
     const d = count - now;
