@@ -142,6 +142,17 @@ body {
     z-index: -1;
 }
 
+.hidden-overlay {
+    top: 10vh;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    background-color: red;
+    width: 100%;
+    height: 760vh;
+    z-index: 10;
+} 
+
 @media(max-width:720px) {
     html, body {
         height: 100%;
@@ -200,5 +211,8 @@ body {
         width: 100vw;
         height: 600vh;
         z-index: -1;
+    }
+    .hidden-overlay {
+        height: 500vh;
     }
 }

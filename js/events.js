@@ -43,7 +43,7 @@ function popup(btn, rule, cancel) {
     btn.addEventListener('click', ()=> {
         rule.style.display = 'block';
         rule.style.zIndex=3;
-        scrollTo(0,0);
+        // scrollTo(0,0);
     })
     
     cancel.addEventListener('click', ()=> {

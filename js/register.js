@@ -18,18 +18,33 @@ firebase.analytics();
 const registrationForm = document.querySelector("#register-form");
 const eventName = document.querySelector("#event-name");
 const secondParticipant = document.querySelector("#sname");
+const thirdParticipant = document.querySelector("#tname");
+const fourthParticipant = document.querySelector("#four-name");
 const success = document.querySelector('.success');
 const error = document.querySelector('.error');
 
 const db = firebase.firestore();
 
 eventName.addEventListener("click", () => {
-  if (eventName.value == "Coding" || eventName.value == "Web") {
-    secondParticipant.style.pointerEvents = "fill";
-    secondParticipant.style.background = "none";
-  } else {
-    secondParticipant.style.pointerEvents = "none";
-    secondParticipant.style.background = "grey";
+  if (eventName.value == "Quiz" || eventName.value == "Web" || eventName.value=="TreasureHunt") {
+    secondParticipant.style.opacity = 10;
+    thirdParticipant.style.opacity = 0;
+    fourthParticipant.style.opacity = 0;
+  } else if(eventName.value=="AppDev") {
+    secondParticipant.style.opacity = 10;
+    thirdParticipant.style.opacity = 10;
+    fourthParticipant.style.opacity = 0;
+  } else if(eventName.value == "CounterStrike" || eventName.value =="PUBG") {
+    secondParticipant.style.opacity = 10;
+    thirdParticipant.style.opacity = 10;
+    fourthParticipant.style.opacity = 10;
+  }
+  else {
+    // secondParticipant.style.pointerEvents = "none";
+    // secondParticipant.style.background = "grey";
+    secondParticipant.style.opacity = 0;
+    thirdParticipant.style.opacity = 0;
+    fourthParticipant.style.opacity = 0;
   }
 });
 
