@@ -70,6 +70,7 @@ registrationForm.addEventListener("submit", e => {
     .add(input)
     .then(() => {
       success.style.display = 'flex';
+      scrollTo (0,0);
     })
     .catch(err => {
       error.style.display = 'flex';
