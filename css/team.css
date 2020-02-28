@@ -137,8 +137,8 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    width: 120vw;
-    height: 800vh;
+    width: 100%;
+    height: 870vh;
     z-index: -1;
 }
 
@@ -149,7 +149,7 @@ body {
     position: absolute;
     background-color: red;
     width: 100%;
-    height: 760vh;
+    height: 850vh;
     z-index: 10;
 } 
 
@@ -213,6 +213,6 @@ body {
         z-index: -1;
     }
     .hidden-overlay {
-        height: 500vh;
+        height: 550vh;
     }
 }
