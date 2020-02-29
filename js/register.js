@@ -1,17 +1,17 @@
-// Your web app's Firebase configuration
-var firebaseConfig = {
-  apiKey: "AIzaSyAM0-fPghHYWab3xB8n_8MO2ROPnbYpLFE",
-  authDomain: "abhyuday-48c00.firebaseapp.com",
-  databaseURL: "https://abhyuday-48c00.firebaseio.com",
-  projectId: "abhyuday-48c00",
-  storageBucket: "abhyuday-48c00.appspot.com",
-  messagingSenderId: "203228362364",
-  appId: "1:203228362364:web:41bccfa6a0e57461cf7bf9",
-  measurementId: "G-TGF85T5Q4C"
-};
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-firebase.analytics();
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDDCw013n-vCsYpCPUeTgoFG-avob_Xa9s",
+    authDomain: "abhyudayrit-ecafb.firebaseapp.com",
+    databaseURL: "https://abhyudayrit-ecafb.firebaseio.com",
+    projectId: "abhyudayrit-ecafb",
+    storageBucket: "abhyudayrit-ecafb.appspot.com",
+    messagingSenderId: "288688629306",
+    appId: "1:288688629306:web:d7568ace6d1e1d9f9d7703",
+    measurementId: "G-DWL5W0K3PG"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
 
 
 //javaScript
@@ -19,7 +19,7 @@ const registrationForm = document.querySelector("#register-form");
 const eventName = document.querySelector("#event-name");
 const secondParticipant = document.querySelector("#sname");
 const thirdParticipant = document.querySelector("#tname");
-const fourthParticipant = document.querySelector("#four-name");
+const fourthParticipant = document.querySelector("#fourName");
 const success = document.querySelector('.success');
 const error = document.querySelector('.error');
 
@@ -58,6 +58,8 @@ registrationForm.addEventListener("submit", e => {
   input = {
     fname: registrationForm.fname.value,
     sname: registrationForm.sname.value,
+    tname: registrationForm.tname.value,
+    fourName: registrationForm.fourName.value,
     mail: registrationForm.mail.value,
     college: registrationForm.college.value,
     phoneNumber: registrationForm.phoneNumber.value,
@@ -66,12 +68,14 @@ registrationForm.addEventListener("submit", e => {
     time: firebase.firestore.Timestamp.fromDate(now)
   };
 
-  db.collection("two")
+  db.collection("abhyudayrit")
     .add(input)
     .then(() => {
       success.style.display = 'flex';
+      scrollTo(0,0);
     })
     .catch(err => {
+      console.log(err);
       error.style.display = 'flex';
     });
 });
