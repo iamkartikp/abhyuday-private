@@ -19,7 +19,7 @@ const registrationForm = document.querySelector("#register-form");
 const eventName = document.querySelector("#event-name");
 const secondParticipant = document.querySelector("#sname");
 const thirdParticipant = document.querySelector("#tname");
-const fourthParticipant = document.querySelector("#four-name");
+const fourthParticipant = document.querySelector("#fourName");
 const success = document.querySelector('.success');
 const error = document.querySelector('.error');
 
