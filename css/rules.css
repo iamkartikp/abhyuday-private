@@ -63,6 +63,10 @@ body {
     top:0;
 }
 
+.container {
+    margin-top: 10vh;
+}
+
 .row {
     color: black;
 }
