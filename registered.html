@@ -3,35 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="icon" href="media/abhLogo.png">
     <title>Registered Participants</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Concert+One|Josefin+Sans&display=swap');
+        .container h1, .container h5 {
+            text-transform: uppercase;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+    </style>
 </head>
 <body>
     <button class="btn">Print</button>
     <div class="container">
-        <h1>Abhyuday 7  </h1><span> 20th, 21st March</span>
-        <table class="striped">
+        <h1>Abhyuday</h1> <h5>20th, 21st March</h5>
+        <table class="table table-bordered">
             <thead>
-                <tr>
-                    <th>Fname</th>
-                    <th>College</th>
-                    <th>Course</th>
-                    <th>Event</th>
-                    <th>PNumber</th>
-                    <th>Email</th>
-                    <th>Participant 2</th>
-                    <th>P 3</th>
-                    <th>p4</th>
-                </tr>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">College</th>
+                <th scope="col">Course</th>
+                <th scope="col">Event</th>
+                <th scope="col">Ph. Number</th>
+                <th scope="col">Email</th>
+                <th scope="col">Participant2</th>
+                <th scope="col">Participant3</th>
+                <th scope="col">Participant4</th>
+              </tr>
             </thead>
-            <tbody id="tbody">
-    
+            <tbody>
+              <tr id="tbody">
+                
+              </tr>
             </tbody>
-        </table>
+          </table>
     </div>
 
     <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
