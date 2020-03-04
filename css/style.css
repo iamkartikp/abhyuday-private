@@ -80,14 +80,26 @@ body {
 }
 
 .header-content {
-    margin: 15% 20%;
+    margin: 15% 25%;
     position: absolute;
     top: 0;
     z-index: 2;
 }
 
 .header-content img {
-    width: 50%;
+    width: 30%;
+}
+
+.header-content .date {
+    font-size: 1.4rem;
+}
+
+.header-content .countdown {
+    font-size: 1.4rem;
+}
+
+.header-content p {
+    font-size: 10px;
 }
 
 .header-content h1 {
@@ -130,10 +142,23 @@ body {
     font-weight: bolder;
 }
 
+.sponsor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sponsor img {
+    margin-top: 15vh;
+    height: 15%;
+    width: 15%;
+}
+
  #section-two {
     position: relative;  
     height: 50vh; 
-    margin-top: 100vh;
+    margin-top: 150vh;
     display: grid;
     grid-template-columns: repeat(2,1fr);
  }
@@ -300,15 +325,23 @@ body {
     }
 
     .header-content {
-        margin-top: 25%;
+        margin-top: 20vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
-    
-    .header-content .btn {
-        padding: 5px;   
+    .header-content img {
+        margin-top: 5vh;
+        height: 50%;
+        width: 50%;
     }
-
-    .header-content .btn {
-        padding: 5px;
+    .countdown {
+        font-size: 10px;
+    }
+    .sponsor .btn a{
+        font-size: 1rem;
+        padding: 10px;
     }
     .date {
         display: none;
