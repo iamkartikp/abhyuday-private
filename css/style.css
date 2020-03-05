@@ -67,6 +67,10 @@ body {
     top:0;
 }
 
+.nav-bar #logo {
+    margin: 2%;
+}
+
 .header-overlay {
     position: absolute;
     top: 0;
@@ -80,14 +84,27 @@ body {
 }
 
 .header-content {
-    margin: 15% 20%;
+    margin: 15% 25%;
     position: absolute;
     top: 0;
     z-index: 2;
 }
 
-.header-content img {
-    width: 50%;
+.header-content .abh-logo {
+    height: 100%;
+    width: 100%;
+}
+
+.header-content .date {
+    font-size: 1.4rem;
+}
+
+.header-content .countdown {
+    font-size: 1.4rem;
+}
+
+.header-content p {
+    font-size: 10px;
 }
 
 .header-content h1 {
@@ -130,10 +147,23 @@ body {
     font-weight: bolder;
 }
 
+.sponsor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sponsor img {
+    margin-top: 0;
+    height: 15%;
+    width: 15%;
+}
+
  #section-two {
     position: relative;  
     height: 50vh; 
-    margin-top: 100vh;
+    margin-top: 150vh;
     display: grid;
     grid-template-columns: repeat(2,1fr);
  }
@@ -283,9 +313,9 @@ body {
         overflow-x: hidden;
     }
     #logo {
-        margin-top: 5%;
-        height: 8%;
-        width: 25%;
+        margin: 5vh 2%;
+        width: 20%;
+        height: 4%;
     }
     .nav-bar {
         display: grid;
@@ -300,15 +330,23 @@ body {
     }
 
     .header-content {
-        margin-top: 25%;
+        margin-top: 20vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
-    
-    .header-content .btn {
-        padding: 5px;   
+    .header-content img {
+        margin-top: 5vh;
+        height: 100%;
+        width: 100%;
     }
-
-    .header-content .btn {
-        padding: 5px;
+    .countdown {
+        font-size: 10px;
+    }
+    .sponsor .btn a{
+        font-size: 1rem;
+        padding: 10px;
     }
     .date {
         display: none;
