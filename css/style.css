@@ -67,6 +67,10 @@ body {
     top:0;
 }
 
+.nav-bar #logo {
+    margin: 2%;
+}
+
 .header-overlay {
     position: absolute;
     top: 0;
@@ -86,8 +90,9 @@ body {
     z-index: 2;
 }
 
-.header-content img {
-    width: 30%;
+.header-content .abh-logo {
+    height: 100%;
+    width: 100%;
 }
 
 .header-content .date {
@@ -150,7 +155,7 @@ body {
 }
 
 .sponsor img {
-    margin-top: 15vh;
+    margin-top: 0;
     height: 15%;
     width: 15%;
 }
@@ -308,9 +313,9 @@ body {
         overflow-x: hidden;
     }
     #logo {
-        margin-top: 5%;
-        height: 8%;
-        width: 25%;
+        margin: 5vh 2%;
+        width: 20%;
+        height: 4%;
     }
     .nav-bar {
         display: grid;
@@ -333,8 +338,8 @@ body {
     }
     .header-content img {
         margin-top: 5vh;
-        height: 50%;
-        width: 50%;
+        height: 100%;
+        width: 100%;
     }
     .countdown {
         font-size: 10px;
