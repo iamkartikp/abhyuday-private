@@ -38,6 +38,7 @@ db.collection('abhyudayrit').get()
 
 function template(snap) {
     html = `
+      <tr>
         <td> ${snap.fname}</td> 
         <td> ${snap.college}</td> 
         <td> ${snap.course}</td> 
@@ -47,6 +48,7 @@ function template(snap) {
         <td> ${snap.sname}</td> 
         <td> ${snap.tname}</td> 
         <td> ${snap.fourName}</td> 
+     </tr>
     `;
     tbody.innerHTML += html;
 }
