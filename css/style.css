@@ -43,7 +43,7 @@ body {
     color: white;
     font-family: 'Bebas Neue', cursive;
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(6,1fr);
     margin-top: 5vh;
 }
 
@@ -61,7 +61,7 @@ body {
     color: rgb(255, 30, 0);
 }
 
-.nav-bar img{
+.nav-bar #logo{
     position: fixed;
     left: 0;
     top:0;
@@ -71,6 +71,13 @@ body {
     margin: 2%;
 }
 
+.nav-logos {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.csi {
+    margin-top: -10px;
+}
 .header-overlay {
     position: absolute;
     top: 0;
@@ -307,15 +314,25 @@ body {
     cursor: pointer;
 }
 
+@media(max-width: 1080px) {
+    .nav-bar h2 {
+        font-size: 1.4rem;
+    }
+    #logo {
+        width: 20%;
+        height: 10%;
+    }
+}
+
 @media(max-width: 720px) {
     body {
         text-align: center;
         overflow-x: hidden;
     }
-    #logo {
-        margin: 5vh 2%;
-        width: 20%;
-        height: 4%;
+    .nav-bar #logo {
+        margin-top: 30px;
+        width: 15%;
+        height: 3%;
     }
     .nav-bar {
         display: grid;
@@ -324,7 +341,11 @@ body {
     .nav-bar h2 {
         font-size: 1rem;
     }
-
+    .csi {
+        width: 50%;
+        height: 50%;
+        margin: 0;
+    }
     .video-header {
         height: 100%;
     }
@@ -343,6 +364,10 @@ body {
     }
     .countdown {
         font-size: 10px;
+    }
+    .sponsor img {
+        height: 30%;
+        width: 30%;
     }
     .sponsor .btn a{
         font-size: 1rem;
