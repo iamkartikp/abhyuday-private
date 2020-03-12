@@ -80,3 +80,11 @@ registrationForm.addEventListener("submit", e => {
       error.style.display = 'flex';
     });
 });
+
+
+const notice = document.querySelector('.notice');
+const closeNotice = document.querySelector('#close-notice');
+
+closeNotice.addEventListener('click',()=> {
+    notice.style.display = 'none';
+});
