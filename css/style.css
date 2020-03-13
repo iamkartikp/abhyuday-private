@@ -354,6 +354,9 @@ body {
 }
 
 @media(max-width: 1080px) {
+    html {
+        overflow-x: hidden;
+    }
     .nav-bar h2 {
         font-size: 1.4rem;
     }
@@ -364,9 +367,12 @@ body {
 }
 
 @media(max-width: 720px) {
-    body {
-        text-align: center;
+    html {
         overflow-x: hidden;
+    }
+    body {
+        overflow-x: hidden;
+        text-align: center;
     }
     .nav-bar #logo {
         margin-top: 30px;
@@ -447,7 +453,7 @@ body {
         display: none;
     }
     .notice {
-        animation: notice-anim 10s infinite;
+        animation: notice-anim 5s 0.2s linear infinite;
     }
     .notice h1 {
         font-size: 1rem;
@@ -463,5 +469,6 @@ body {
     }
     to {
         transform: translateX(100vw);
+        display: none;
     }
 }
