@@ -1,4 +1,3 @@
-
 // javaScript
 const tbody = document.querySelector('#tbody');
 const btn = document.querySelector('.btn');
